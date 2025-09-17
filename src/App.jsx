@@ -1,35 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import { FaCaretRight, FaTwitter } from "react-icons/fa";
+// import { Button } from "./components/buttons/Button";
+// import PlaneIcon from "./assets/icons/PlaneIcon";
+// import UpArrowIcon from "./assets/icons/UpArrowIcon";
+
+// function App() {
+//   return (
+//     <>
+//       <Button color="primary" size="sm">
+//         Shop now
+//       </Button>
+//       <Button variant="ghost" size="">
+//         View All Collection <FaCaretRight />
+//       </Button>
+//       <Button color="secondary" className="h-[50px] leading-8 py-1.5 px-3">
+//         <PlaneIcon className="h-auto w-[25px] fill-white" />
+//       </Button>
+//       <Button color="primary" className="h-[40px] py-1.5 px-3">
+//         <PlaneIcon className="w-[15px] h-[15px] fill-white" />
+//       </Button>
+//       <Button variant="ghost" className="my-0 mx-[5px]">
+//         <FaTwitter />
+//       </Button>
+//       <Button variant="secondary">
+//         <UpArrowIcon />
+//       </Button>
+//     </>
+//   );
+// }
+
+// export default App;
+import { createRouterApp } from "./router/createRouterApp";
+import { RouterProvider } from "react-router";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  const router = createRouterApp();
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
