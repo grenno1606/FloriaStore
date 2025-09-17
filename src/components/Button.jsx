@@ -5,7 +5,7 @@ const button = tv({
   base: "font-semibold inline-block transition-all duration-300 relative",
   variants: {
     variant: {
-      primary: "py-3 px-5 tracking-[2px] leading-none text-center uppercase",
+      primary: "py-3 px-5 tracking-[2px] !leading-none text-center uppercase",
       ghost: "text-black font-medium flex items-center bg-transparent",
       secondary:
         "leading-[43px] flex items-center justify-center overflow-hidden shadow-lighter",

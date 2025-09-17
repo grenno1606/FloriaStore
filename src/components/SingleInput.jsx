@@ -1,6 +1,7 @@
 import { twMerge } from "tailwind-merge";
-import PlaneIcon from "../../assets/icons/PlaneIcon";
+
 import { Button } from "./Button";
+import PlaneIcon from "../assets/icons/PlaneIcon";
 
 export const SingleInput = ({
   className,

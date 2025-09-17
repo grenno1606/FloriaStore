@@ -4,9 +4,9 @@ import { IMG_LOGO } from "../../contants/images";
 import SearchIcon from "../../assets/icons/SearchIcon";
 import CartIcon from "../../assets/icons/CartIcon";
 import { Link } from "react-router";
-import { Button } from "../../components/buttons/Button";
 import HeartIcon from "../../assets/icons/HeartIcon";
 import UserIcon from "../../assets/icons/UserIcon";
+import { Button } from "../../components/Button";
 
 export const Header = () => {
   const [showHeader, setShowHeader] = useState(false);
