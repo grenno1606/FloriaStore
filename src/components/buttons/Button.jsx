@@ -8,17 +8,26 @@ const button = tv({
       primary: "py-3 px-5 tracking-[2px] leading-none text-center uppercase",
       ghost: "text-black font-medium flex items-center bg-transparent",
       secondary:
-        "w-[45px] h-[45px] leading-[43px] rounded-[50%] bg-white flex items-center justify-center overflow-hidden text-[20px] shadow-[0_0_10px_#0000001a]",
+        "leading-[43px] flex items-center justify-center overflow-hidden shadow-lighter",
     },
+
     color: {
       default: "",
       primary: "bg-black text-white hover:bg-pink-dark",
       secondary: "bg-pink-dark text-white hover:bg-black",
+      third: "bg-white text-black hover:bg-pink-dark hover:text-white",
     },
+
     size: {
       xs: "text-[12px]",
       sm: "text-sm",
       md: "text-base",
+      lg: "text-[20px]",
+    },
+
+    shape: {
+      default: "",
+      circle: "rounded-[50%] w-[45px] h-[45px]",
     },
   },
 });
@@ -28,10 +37,13 @@ export const Button = ({
   variant = "primary",
   color = "default",
   size = "md",
+  shape = "default",
   className,
 }) => {
   return (
-    <button className={twMerge(button({ variant, color, size }), className)}>
+    <button
+      className={button({ variant, color, size, shape, class: className })}
+    >
       {children}
     </button>
   );

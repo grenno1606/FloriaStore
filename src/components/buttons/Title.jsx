@@ -23,6 +23,6 @@ export const Title = ({
   className,
 }) => {
   return (
-    <div className={twMerge(title({ size, color }), className)}>{children}</div>
+    <div className={title({ size, color, class: className })}>{children}</div>
   );
 };
