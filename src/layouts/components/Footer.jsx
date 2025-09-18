@@ -7,7 +7,7 @@ import { Title } from "../../components/Title";
 export const Footer = () => {
   return (
     <div>
-      <div className="bg-gray-100 text-center py-5 border-t border-t-gray-400 ">
+      <div className="bg-gray-100 text-center py-10 border-t border-t-gray-400 ">
         <div className="wrapper lg:flex lg:gap-10 w-full">
           <div>
             <div className="w-40 mx-auto md:pt-5 cursor-pointer">

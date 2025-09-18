@@ -2,11 +2,13 @@ import { twMerge } from "tailwind-merge";
 import { tv } from "tailwind-variants";
 
 const button = tv({
-  base: "font-semibold inline-block transition-all duration-300 relative",
+  base: "font-semibold inline-block transition-all duration-300 relative cursor-pointer",
   variants: {
     variant: {
       primary: "py-3 px-5 tracking-[2px] !leading-none text-center uppercase",
       ghost: "text-black font-medium flex items-center bg-transparent",
+      outline:
+        "w-[42px] h-[42px] border border-gray-300 text-gray-650 font-medium tracking-normal leading-[42px] flex items-center justify-center hover:text-white hover:bg-pink-dark",
       secondary:
         "leading-[43px] flex items-center justify-center overflow-hidden shadow-lighter",
     },
@@ -16,6 +18,7 @@ const button = tv({
       primary: "bg-black text-white hover:bg-pink-dark",
       secondary: "bg-pink-dark text-white hover:bg-black",
       third: "bg-white text-black hover:bg-pink-dark hover:text-white",
+      fourth: "border-black-light text-black-light",
     },
 
     size: {
