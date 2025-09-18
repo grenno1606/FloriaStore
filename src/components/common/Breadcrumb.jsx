@@ -1,7 +1,7 @@
 import { twMerge } from "tailwind-merge";
-import { IMG_BACKGROUND_TITLE } from "../contants/images";
 import { Link } from "react-router";
 import { FaAngleRight } from "react-icons/fa";
+import { IMG_BACKGROUND_TITLE } from "../../contants/images";
 
 export const Breadcrumb = ({ children, hasBackground = true }) => {
   return (

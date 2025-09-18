@@ -1,7 +1,7 @@
 import { Link } from "react-router";
-import CartIcon from "../assets/icons/CartIcon";
-import HeartIcon from "../assets/icons/HeartIcon";
-import { Button } from "./Button";
+import CartIcon from "../../assets/icons/CartIcon";
+import HeartIcon from "../../assets/icons/HeartIcon";
+import { Button } from "../buttons/Button";
 
 export const ProductItem = ({
   img,

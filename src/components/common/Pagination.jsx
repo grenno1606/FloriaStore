@@ -1,5 +1,5 @@
 import { FaAngleRight } from "react-icons/fa";
-import { Button } from "./Button";
+import { Button } from "../buttons/Button";
 
 export const Pagination = () => {
   return (

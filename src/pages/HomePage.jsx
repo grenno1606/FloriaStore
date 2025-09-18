@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { twMerge } from "tailwind-merge";
-import { Slideshow } from "../components/Slideshow";
+import { Slideshow } from "../components/common/Slideshow";
 import {
   IMG_BACKGROUND,
   IMG_BANNER_1,
@@ -13,14 +13,14 @@ import {
   IMG_SLIDE_2,
   IMG_SLIDE_3,
 } from "../contants/images";
-import { Banner } from "../components/Banner";
-import { Title } from "../components/Title";
-import { ProductItem } from "../components/ProductItem";
-import { Button } from "../components/Button";
-import { TitleWidget } from "../components/TitleWidget";
-import { ProductCard } from "../components/ProductCard";
-import { Blog } from "../components/Blog";
-import { SendMailInput } from "../components/SendMailInput";
+import { Title } from "../components/common/Title";
+import { ProductItem } from "../components/products/ProductItem";
+import { Button } from "../components/buttons/Button";
+import { TitleWidget } from "../components/common/TitleWidget";
+import { ProductCard } from "../components/products/ProductCard";
+import { Blog } from "../components/blogs/Blog";
+import { SendMailInput } from "../components/inputs/SendMailInput";
+import { Banner } from "../components/common/Banner";
 
 export const HomePage = () => {
   const [value, setValue] = useState(1);

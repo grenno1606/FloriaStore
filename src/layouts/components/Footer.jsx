@@ -1,8 +1,8 @@
 import { FaFacebook, FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa";
 import { IMG_LOGO, IMG_PAYMENT } from "../../contants/images";
-import { SendMailInput } from "../../components/SendMailInput";
-import { Button } from "../../components/Button";
-import { Title } from "../../components/Title";
+import { SendMailInput } from "../../components/inputs/SendMailInput";
+import { Button } from "../../components/buttons/Button";
+import { Title } from "../../components/common/Title";
 
 export const Footer = () => {
   return (

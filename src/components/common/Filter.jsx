@@ -1,5 +1,5 @@
 import { IoCaretDownOutline, IoFunnelOutline } from "react-icons/io5";
-import FilterIcon from "../assets/icons/FilterIcon";
+import FilterIcon from "../../assets/icons/FilterIcon";
 
 export const Filter = () => {
   return (

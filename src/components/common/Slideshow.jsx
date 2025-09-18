@@ -1,5 +1,5 @@
 import { twMerge } from "tailwind-merge";
-import { Button } from "./Button";
+import { Button } from "../buttons/Button";
 const getEffects = (effectName) => {
   switch (effectName) {
     case "effect1":

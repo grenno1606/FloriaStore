@@ -1,5 +1,5 @@
 import { FaCaretRight } from "react-icons/fa";
-import { Button } from "./Button";
+import { Button } from "../buttons/Button";
 
 export const Banner = ({ img, subtitle, title, buttonName }) => {
   return (

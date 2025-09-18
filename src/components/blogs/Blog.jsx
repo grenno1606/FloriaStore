@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { twMerge } from "tailwind-merge";
-import { Button } from "./Button";
+import { Button } from "../buttons/Button";
 
 export const Blog = ({
   children,

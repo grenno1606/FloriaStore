@@ -1,12 +1,12 @@
 import { Link } from "react-router";
-import { Breadcrumb } from "../components/Breadcrumb";
-import { Filter } from "../components/Filter";
-import { Pagination } from "../components/Pagination";
-import { ProductItem } from "../components/ProductItem";
-import { TitleFilter } from "../components/TitleFilter";
+import { Breadcrumb } from "../components/common/Breadcrumb";
+import { Filter } from "../components/common/Filter";
+import { Pagination } from "../components/common/Pagination";
+import { ProductItem } from "../components/products/ProductItem";
+import { TitleFilter } from "../components/common/TitleFilter";
 import { IMG_PRODUCT } from "../contants/images";
 import { IoChevronForwardOutline } from "react-icons/io5";
-import { Button } from "../components/Button";
+import { Button } from "../components/buttons/Button";
 
 export const ProductsPage = () => {
   return (
