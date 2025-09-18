@@ -1,8 +1,9 @@
 import { twMerge } from "tailwind-merge";
-import PlaneIcon from "../../assets/icons/PlaneIcon";
-import { Button } from "./Button";
 
-export const SingleInput = ({
+import { Button } from "../buttons/Button";
+import PlaneIcon from "../../assets/icons/PlaneIcon";
+
+export const SendMailInput = ({
   className,
   color = "secondary",
   placeholder = "Your email address...",

@@ -1,13 +1,13 @@
 import { FaFacebook, FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa";
 import { IMG_LOGO, IMG_PAYMENT } from "../../contants/images";
+import { SendMailInput } from "../../components/inputs/SendMailInput";
 import { Button } from "../../components/buttons/Button";
-import { Title } from "../../components/buttons/Title";
-import { SingleInput } from "../../components/buttons/SingleInput";
+import { Title } from "../../components/common/Title";
 
 export const Footer = () => {
   return (
     <div>
-      <div className="bg-gray-100 text-center py-5 border-t border-t-gray-400 ">
+      <div className="bg-gray-100 text-center py-10 border-t border-t-gray-400 ">
         <div className="wrapper lg:flex lg:gap-10 w-full">
           <div>
             <div className="w-40 mx-auto md:pt-5 cursor-pointer">
@@ -18,7 +18,7 @@ export const Footer = () => {
               discount 30% off
             </div>
             <div className="mt-5 w-full max-w-3xs mx-auto">
-              <SingleInput color="primary" />
+              <SendMailInput color="primary" />
             </div>
             <ul className="mt-5 inline-flex items-center gap-0.5 *:cursor-pointer *:hover:text-pink-dark">
               <li className="p-2">
