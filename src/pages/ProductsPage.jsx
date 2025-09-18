@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import { Breadcrumb } from "../components/Breadcrumb";
 import { Filter } from "../components/Filter";
-import { PagiNav } from "../components/PagiNav";
+import { Pagination } from "../components/Pagination";
 import { ProductItem } from "../components/ProductItem";
 import { TitleFilter } from "../components/TitleFilter";
 import { IMG_PRODUCT } from "../contants/images";
@@ -178,7 +178,7 @@ export const ProductsPage = () => {
               />
             </div>
           </div>
-          <PagiNav />
+          <Pagination />
         </div>
       </div>
     </div>

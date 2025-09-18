@@ -17,7 +17,8 @@ const button = tv({
       default: "",
       primary: "bg-black text-white hover:bg-pink-dark",
       secondary: "bg-pink-dark text-white hover:bg-black",
-      third: "bg-white text-black hover:bg-pink-dark hover:text-white",
+      third:
+        "bg-white text-black hover:bg-pink-dark hover:text-white hover:fill-white",
       fourth: "border-black-light text-black-light",
     },
 

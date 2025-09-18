@@ -18,10 +18,9 @@ import { Title } from "../components/Title";
 import { ProductItem } from "../components/ProductItem";
 import { Button } from "../components/Button";
 import { TitleWidget } from "../components/TitleWidget";
-import { ProductHorizontal } from "../components/ProductHorizontal";
-import { SingleInput } from "../components/SingleInput";
-import PlaneIcon from "../assets/icons/PlaneIcon";
+import { ProductCard } from "../components/ProductCard";
 import { Blog } from "../components/Blog";
+import { SendMailInput } from "../components/SendMailInput";
 
 export const HomePage = () => {
   const [value, setValue] = useState(1);
@@ -74,9 +73,7 @@ export const HomePage = () => {
               titleBig="Beautiful Flowers Gift"
               description="10% Off Your First Order"
               className="sm:left-8 lg:left-16 xl:left-32"
-              effect1={value === 1}
-              effect2={value === 2}
-              effect3={value === 3}
+              effectName={`effect${value}`}
             />
           </div>
           <div className="w-1/3">
@@ -86,9 +83,7 @@ export const HomePage = () => {
               titleBig="Beautiful Flowers Gift"
               description="10% Off Your First Order"
               className="text-center left-1/2 -translate-x-1/2 w-full"
-              effect1={value === 1}
-              effect2={value === 2}
-              effect3={value === 3}
+              effectName={`effect${value}`}
             />
           </div>
           <div className="w-1/3">
@@ -98,9 +93,7 @@ export const HomePage = () => {
               titleBig="Beautiful Flowers Gift"
               description="10% Off Your First Order"
               className="text-center left-1/2 -translate-x-1/2 w-full"
-              effect1={value === 1}
-              effect2={value === 2}
-              effect3={value === 3}
+              effectName={`effect${value}`}
             />
           </div>
         </div>
@@ -228,17 +221,17 @@ export const HomePage = () => {
               <TitleWidget>Featured Products</TitleWidget>
             </div>
             <div className="">
-              <ProductHorizontal
+              <ProductCard
                 imgProduct={IMG_PRODUCT}
                 name="Sapphire Skies Bouquet"
                 price="$52.00"
               />
-              <ProductHorizontal
+              <ProductCard
                 imgProduct={IMG_PRODUCT}
                 name="Sapphire Skies Bouquet"
                 price="$52.00"
               />
-              <ProductHorizontal
+              <ProductCard
                 imgProduct={IMG_PRODUCT}
                 name="Sapphire Skies Bouquet"
                 price="$52.00"
@@ -252,17 +245,17 @@ export const HomePage = () => {
               <TitleWidget>Featured Products</TitleWidget>
             </div>
             <div className="">
-              <ProductHorizontal
+              <ProductCard
                 imgProduct={IMG_PRODUCT}
                 name="Sapphire Skies Bouquet"
                 price="$52.00"
               />
-              <ProductHorizontal
+              <ProductCard
                 imgProduct={IMG_PRODUCT}
                 name="Sapphire Skies Bouquet"
                 price="$52.00"
               />
-              <ProductHorizontal
+              <ProductCard
                 imgProduct={IMG_PRODUCT}
                 name="Sapphire Skies Bouquet"
                 price="$52.00"
@@ -276,17 +269,17 @@ export const HomePage = () => {
               <TitleWidget>Featured Products</TitleWidget>
             </div>
             <div>
-              <ProductHorizontal
+              <ProductCard
                 imgProduct={IMG_PRODUCT}
                 name="Sapphire Skies Bouquet"
                 price="$52.00"
               />
-              <ProductHorizontal
+              <ProductCard
                 imgProduct={IMG_PRODUCT}
                 name="Sapphire Skies Bouquet"
                 price="$52.00"
               />
-              <ProductHorizontal
+              <ProductCard
                 imgProduct={IMG_PRODUCT}
                 name="Sapphire Skies Bouquet"
                 price="$52.00"
@@ -309,9 +302,7 @@ export const HomePage = () => {
             </p>
           </div>
           <div className="px-[15px] mt-5 mx-auto w-full max-w-xl">
-            <SingleInput>
-              <PlaneIcon />
-            </SingleInput>
+            <SendMailInput />
           </div>
         </div>
       </section>

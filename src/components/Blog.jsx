@@ -8,14 +8,14 @@ export const Blog = ({
   img,
   day,
   month,
-  isContent = true,
+  hasContent = true,
 }) => {
   return (
     <div className="flex flex-col gap-4 justify-center items-center w-full">
       <div
         className={twMerge(
           "relative group overflow-hidden",
-          isContent &&
+          hasContent &&
             "hover:after:bg-white/40 after:absolute after:inset-0 after:z-[1] after:transition after:duration-300"
         )}
       >
@@ -27,7 +27,7 @@ export const Blog = ({
         <div
           className={twMerge(
             "absolute top-4 flex flex-col left-4 justify-center items-center bg-white shadow-light w-[68px] h-[68px] text-black font-semibold text-center uppercase rounded-full",
-            isContent && "rounded-none"
+            hasContent && "rounded-none"
           )}
         >
           <p className="text-[14px]">{day}</p>
@@ -52,7 +52,7 @@ export const Blog = ({
           <span
             className={twMerge(
               "absolute bottom-0 left-1/2 -translate-x-1/2 h-[1px] w-[50px] bg-gray-300",
-              isContent && "bg-pink-dark"
+              hasContent && "bg-pink-dark"
             )}
           ></span>
         </div>
@@ -67,7 +67,7 @@ export const Blog = ({
         <div
           className={twMerge(
             "pb-1 inline-block text-[14px] font-semibold border-b-2 border-b-black cursor-pointer hover:text-pink-dark",
-            isContent && "hidden"
+            hasContent && "hidden"
           )}
         >
           <Button variant="ghost">Read more</Button>

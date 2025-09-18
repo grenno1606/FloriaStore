@@ -1,12 +1,7 @@
 import { Link } from "react-router";
 import { twMerge } from "tailwind-merge";
 
-export const ProductHorizontal = ({
-  imgProduct,
-  name,
-  price,
-  divider = true,
-}) => {
+export const ProductCard = ({ imgProduct, name, price, divider = true }) => {
   return (
     <div
       className={twMerge(

@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import CartIcon from "../assets/icons/CartIcon";
 import HeartIcon from "../assets/icons/HeartIcon";
+import { Button } from "./Button";
 
 export const ProductItem = ({
   img,
@@ -17,14 +18,20 @@ export const ProductItem = ({
           {salePercent}
         </span>
         <div className="absolute top-1/2 flex flex-col gap-4 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-700">
-          <span className="bg-white w-11 h-11 text-black flex items-center justify-center rounded-full text-lg shadow-medium cursor-pointer hover:bg-pink-dark hover:text-white group-hover:translate-x-5 transition duration-700">
-            <CartIcon />
+          <span className="group-hover:translate-x-5 transition duration-700">
+            <Button variant="secondary" shape="circle" color="third">
+              <CartIcon className="w-5 h-5" />
+            </Button>
           </span>
-          <span className="bg-white w-11 h-11 text-black flex items-center justify-center rounded-full text-lg shadow-medium cursor-pointer hover:bg-pink-dark hover:text-white group-hover:translate-x-5 transition duration-500">
-            <HeartIcon />
+          <span className="group-hover:translate-x-5 transition duration-500">
+            <Button variant="secondary" shape="circle" color="third">
+              <HeartIcon className="w-5 h-5" />
+            </Button>
           </span>
-          <span className="bg-white w-11 h-11 text-black flex items-center justify-center rounded-full text-lg shadow-medium cursor-pointer hover:bg-pink-dark hover:text-white group-hover:translate-x-5 transition duration-300">
-            <HeartIcon />
+          <span className="group-hover:translate-x-5 transition duration-300">
+            <Button variant="secondary" shape="circle" color="third">
+              <HeartIcon className="w-5 h-5" />
+            </Button>
           </span>
         </div>
       </div>

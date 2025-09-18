@@ -1,7 +1,7 @@
 import { FaAngleRight } from "react-icons/fa";
 import { Button } from "./Button";
 
-export const PagiNav = () => {
+export const Pagination = () => {
   return (
     <div className="flex items-center justify-center pb-5 mb-8 gap-2.5">
       <Button variant="outline">1</Button>

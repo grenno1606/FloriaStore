@@ -1,5 +1,32 @@
 import { twMerge } from "tailwind-merge";
 import { Button } from "./Button";
+const getEffects = (effectName) => {
+  switch (effectName) {
+    case "effect1":
+      return {
+        titleSmall: "leftToRight",
+        titleBig: "flip",
+        description: "rightToLeft",
+        button: "scaleAndMove",
+      };
+    case "effect2":
+      return {
+        titleSmall: "downToUp",
+        titleBig: "downToUp",
+        description: "downToUp",
+        button: "downToUp",
+      };
+    case "effect3":
+      return {
+        titleSmall: "upToDown",
+        titleBig: "scale",
+        description: "leftToRight",
+        button: "rightToLeft",
+      };
+    default:
+      throw new Error("EFFECT NOT FOUND");
+  }
+};
 
 export const Slideshow = ({
   image,
@@ -7,10 +34,9 @@ export const Slideshow = ({
   titleBig,
   description,
   className,
-  effect1 = false,
-  effect2 = false,
-  effect3 = false,
+  effectName = "",
 }) => {
+  const effects = getEffects(effectName);
   return (
     <div className="relative h-[450px] md:h-[500px] lg:h-[580px] xl:h-[700px] 2xl:h-[1000px]">
       <img
@@ -27,9 +53,7 @@ export const Slideshow = ({
         <p
           className={twMerge(
             "uppercase text-lg font-semibold lg:font-bold pb-4 tracking-[5px] transition",
-            effect1 && "leftToRight",
-            effect2 && "downToUp",
-            effect3 && "upToDown"
+            effects.titleSmall
           )}
         >
           {titleSmall}
@@ -37,9 +61,7 @@ export const Slideshow = ({
         <p
           className={twMerge(
             "text-3xl font-medium pb-[15px] sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-[100px] transition",
-            effect1 && "flip",
-            effect2 && "downToUp",
-            effect3 && "scale"
+            effects.titleBig
           )}
         >
           {titleBig}
@@ -47,22 +69,12 @@ export const Slideshow = ({
         <p
           className={twMerge(
             "text-[19px] font-semibold pb-[15px] sm:text-2xl mb-[30px] md:text-2xl transition",
-            effect1 && "rightToLeft",
-            effect2 && "downToUp",
-            effect3 && "leftToRight"
+            effects.description
           )}
         >
           {description}
         </p>
-        <Button
-          color="primary"
-          size="sm"
-          className={twMerge(
-            effect1 && "scaleAndMove",
-            effect2 && "downToUp",
-            effect3 && "rightToLeft"
-          )}
-        >
+        <Button color="primary" size="sm" className={twMerge(effects.button)}>
           SHOP NOW
         </Button>
       </div>
