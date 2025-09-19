@@ -8,14 +8,14 @@ export const Blog = ({
   img,
   day,
   month,
-  hasContent = true,
+  condensedContent = true,
 }) => {
   return (
     <div className="flex flex-col gap-4 justify-center items-center w-full">
       <div
         className={twMerge(
-          "relative group overflow-hidden",
-          hasContent &&
+          "relative group overflow-hidden cursor-pointer",
+          condensedContent &&
             "hover:after:bg-white/40 after:absolute after:inset-0 after:z-[1] after:transition after:duration-300"
         )}
       >
@@ -27,18 +27,23 @@ export const Blog = ({
         <div
           className={twMerge(
             "absolute top-4 flex flex-col left-4 justify-center items-center bg-white shadow-light w-[68px] h-[68px] text-black font-semibold text-center uppercase rounded-full",
-            hasContent && "rounded-none"
+            !condensedContent && "rounded-none"
           )}
         >
           <p className="text-[14px]">{day}</p>
-          <span className="bg-black w-7 h-[1px] block mt-1 mx-auto"></span>
+          <span className="bg-gray-450 w-7 h-[1px] block mt-1 mx-auto"></span>
           <p className="text-[10px] pt-1 tracking-[3px] uppercase text-center font-semibold">
             {month}
           </p>
         </div>
       </div>
       <div className="text-center px-7">
-        <span className="text-[16px] font-semibold leading-[24px] text-gray-700 uppercase hover:text-pink-dark hover:cursor-pointer">
+        <span
+          className={twMerge(
+            "text-[16px] font-semibold leading-[24px] text-gray-700 uppercase hover:text-pink-dark cursor-pointer",
+            condensedContent && "text-pink-dark cursor-default"
+          )}
+        >
           NEWS
         </span>
         <br />
@@ -51,8 +56,8 @@ export const Blog = ({
           </Link>
           <span
             className={twMerge(
-              "absolute bottom-0 left-1/2 -translate-x-1/2 h-[1px] w-[50px] bg-gray-300",
-              hasContent && "bg-pink-dark"
+              "absolute bottom-0 left-1/2 -translate-x-1/2 h-[1px] w-[50px] bg-gray-400",
+              !condensedContent && "bg-pink-dark"
             )}
           ></span>
         </div>
@@ -66,11 +71,17 @@ export const Blog = ({
         </p>
         <div
           className={twMerge(
-            "pb-1 inline-block text-[14px] font-semibold border-b-2 border-b-black cursor-pointer hover:text-pink-dark",
-            hasContent && "hidden"
+            "pb-1 inline-block font-semibold border-b-2 group border-b-black cursor-pointer hover:border-b-pink-dark transition-all duration-300",
+            !condensedContent && "hidden"
           )}
         >
-          <Button variant="ghost">Read more</Button>
+          <Button
+            variant="ghost"
+            size="sm"
+            className="group-hover:text-pink-dark"
+          >
+            Read more
+          </Button>
         </div>
       </div>
     </div>

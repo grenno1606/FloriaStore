@@ -6,7 +6,8 @@ const button = tv({
   variants: {
     variant: {
       primary: "py-3 px-5 tracking-[2px] !leading-none text-center uppercase",
-      ghost: "text-black font-medium flex items-center bg-transparent",
+      ghost:
+        "text-black font-medium flex items-center bg-transparent hover:text-pink-dark",
       outline:
         "w-[42px] h-[42px] border border-gray-300 text-gray-650 font-medium tracking-normal leading-[42px] flex items-center justify-center hover:text-white hover:bg-pink-dark",
       secondary:

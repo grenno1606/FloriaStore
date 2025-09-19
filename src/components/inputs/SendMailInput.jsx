@@ -2,11 +2,13 @@ import { twMerge } from "tailwind-merge";
 
 import { Button } from "../buttons/Button";
 import PlaneIcon from "../../assets/icons/PlaneIcon";
+import { IoSearch } from "react-icons/io5";
 
 export const SendMailInput = ({
   className,
   color = "secondary",
   placeholder = "Your email address...",
+  icon,
 }) => {
   return (
     <div
@@ -29,13 +31,17 @@ export const SendMailInput = ({
             : "h-[40px] py-1.5 px-3"
         }
       >
-        <PlaneIcon
-          className={
-            color == "secondary"
-              ? "h-auto w-[25px] fill-white"
-              : "w-[15px] h-[15px] fill-white"
-          }
-        />
+        {icon ? (
+          <IoSearch className="text-[20px]" />
+        ) : (
+          <PlaneIcon
+            className={
+              color == "secondary"
+                ? "h-auto w-[25px] fill-white"
+                : "w-[15px] h-[15px] fill-white"
+            }
+          />
+        )}
       </Button>
     </div>
   );
