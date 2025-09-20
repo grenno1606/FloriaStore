@@ -1,6 +1,6 @@
 import { Link } from "react-router";
-import { QuantityCart } from "../common/QuantityCart";
 import { GoXCircleFill } from "react-icons/go";
+import { QuantityCart } from "../carts/QuantityCart";
 
 export const ProductCart = ({ img, name, price }) => {
   return (

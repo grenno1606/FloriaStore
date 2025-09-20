@@ -17,10 +17,7 @@ export const ProductDesc = ({ img, title, description, reverse = false }) => {
         <p className="text-[14px] text-gray-500 leading-7 mb-4 mt-2">
           {description}
         </p>
-        <Button
-          variant="ghost"
-          className="font-bold text-black border-b-2 border-b-black text-[14px] hover:text-pink-dark hover:border-b-pink-dark"
-        >
+        <Button variant="third" size="sm">
           Buy now
         </Button>
       </div>

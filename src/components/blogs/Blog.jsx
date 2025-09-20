@@ -69,20 +69,13 @@ export const Blog = ({
         >
           {children}
         </p>
-        <div
-          className={twMerge(
-            "pb-1 inline-block font-semibold border-b-2 group border-b-black cursor-pointer hover:border-b-pink-dark transition-all duration-300",
-            !condensedContent && "hidden"
-          )}
+        <Button
+          variant="third"
+          size="sm"
+          className={!condensedContent && "hidden"}
         >
-          <Button
-            variant="ghost"
-            size="sm"
-            className="group-hover:text-pink-dark"
-          >
-            Read more
-          </Button>
-        </div>
+          Read more
+        </Button>
       </div>
     </div>
   );

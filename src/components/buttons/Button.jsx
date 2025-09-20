@@ -12,6 +12,8 @@ const button = tv({
         "w-[42px] h-[42px] border border-gray-300 text-gray-650 font-medium tracking-normal leading-[42px] flex items-center justify-center hover:text-white hover:bg-pink-dark",
       secondary:
         "leading-[43px] flex items-center justify-center overflow-hidden shadow-lighter",
+      third:
+        "font-bold border-b-2 border-b-black inline-block hover:text-pink-dark hover:border-b-pink-dark",
     },
 
     color: {

@@ -1,7 +1,7 @@
 import HeartIcon from "../../assets/icons/HeartIcon";
 import { Button } from "../buttons/Button";
+import { QuantityCart } from "../carts/QuantityCart";
 import { CountDown } from "../common/CountDown";
-import { QuantityCart } from "../common/QuantityCart";
 import { ProductOffer } from "./ProductOffer";
 
 export const ProductDetailCard = ({
