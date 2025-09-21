@@ -10,7 +10,7 @@ export const ProductCard = ({ imgProduct, name, price, divider = true }) => {
       )}
     >
       <Link to="" className="w-[30%] border-2 border-solid border-gray-300">
-        <img src={imgProduct} alt="img_product" />
+        <img src={imgProduct} alt={name} />
       </Link>
       <div className="flex flex-col gap-1.5 ">
         <p className="font-semibold text-base hover:text-pink-dark cursor-pointer">

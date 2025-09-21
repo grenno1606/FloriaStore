@@ -9,7 +9,7 @@ export const ProductWishlist = ({ img, name, price }) => {
         <li className="text-xs text-black md:hidden">Product Name</li>
         <li className="flex gap-5 flex-col items-end md:w-full md:flex-row md:items-center">
           <Link to="">
-            <img className="w-24 h-24" src={img} alt="image product" />
+            <img className="w-24 h-24" src={img} alt={name} />
           </Link>
           <Link
             to=""

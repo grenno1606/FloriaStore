@@ -29,12 +29,12 @@ export const ShoppingCartPage = () => {
           <ProductCart
             img={IMG_PRODUCT}
             name="Baby First Block"
-            price="$138.00"
+            price={13800}
           ></ProductCart>
           <ProductCart
             img={IMG_PRODUCT}
             name="Baby First Block"
-            price="$138.00"
+            price={13800}
           ></ProductCart>
         </div>
         <div className="flex flex-wrap gap-5">

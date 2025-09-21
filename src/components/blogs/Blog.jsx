@@ -21,7 +21,7 @@ export const Blog = ({
       >
         <img
           src={img}
-          alt="img_blog"
+          alt={title}
           className="w-full group-hover:scale-110 transition duration-300"
         />
         <div

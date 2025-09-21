@@ -9,7 +9,7 @@ export const ProductCart = ({ img, name, price }) => {
         <li className="text-xs text-black md:hidden">Product Name</li>
         <li className="flex gap-5 flex-col items-end md:w-full md:flex-row md:items-center">
           <Link to={""}>
-            <img className="w-24 h-24" src={img} alt="image product" />
+            <img className="w-24 h-24" src={img} alt={name} />
           </Link>
           <Link
             to=""
@@ -22,7 +22,7 @@ export const ProductCart = ({ img, name, price }) => {
       <ul className="flex justify-between md:w-1/6 md:items-center">
         <li className="text-xs text-black md:hidden">Price</li>
         <li className="text-[14px] text-gray-500 md:w-full md:flex md:justify-center">
-          {price}
+          ${price}
         </li>
       </ul>
       <ul className="flex justify-between md:w-1/6 md:items-center">
@@ -34,7 +34,7 @@ export const ProductCart = ({ img, name, price }) => {
       <ul className="flex justify-between md:w-1/6 md:items-center">
         <li className="text-xs text-black md:hidden">Sub Total</li>
         <li className="text-[14px] text-gray-500 md:w-full md:flex md:justify-center">
-          {price}
+          ${price}
         </li>
       </ul>
       <ul className="flex justify-between md:w-1/12 md:items-center">

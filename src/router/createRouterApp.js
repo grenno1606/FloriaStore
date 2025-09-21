@@ -6,6 +6,8 @@ import { ProductDetail } from "../pages/ProductDetail";
 import { ShoppingCartPage } from "../pages/ShoppingCartPage";
 import { WishlistPage } from "../pages/WishlistPage";
 import { BlogsPage } from "../pages/BlogsPage";
+import { Account } from "../pages/Account";
+import { BlogDetail } from "../pages/BlogDetail";
 
 export const createRouterApp = () => {
   return createBrowserRouter([
@@ -18,6 +20,14 @@ export const createRouterApp = () => {
         { path: "/wishlist", Component: WishlistPage },
         { path: "/cart", Component: ShoppingCartPage },
         { path: "/blogs", Component: BlogsPage },
+        {
+          path: "/blog",
+          Component: BlogDetail,
+        },
+        {
+          path: "/account",
+          Component: Account,
+        },
       ],
     },
   ]);

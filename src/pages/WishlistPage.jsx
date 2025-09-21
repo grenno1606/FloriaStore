@@ -18,7 +18,7 @@ export const WishlistPage = () => {
           <li className="w-1/3 uppercase flex justify-center border-r border-r-gray-300">
             Action
           </li>
-          <li className="w-1/12 uppercase"></li>
+          <li className="w-1/12"></li>
         </ul>
         <div>
           <ProductWishlist

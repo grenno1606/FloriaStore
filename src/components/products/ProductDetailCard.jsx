@@ -17,7 +17,7 @@ export const ProductDetailCard = ({
   return (
     <div className="mb-8 md:flex md:*:w-1/2 md:*:px-[7.5px] md:-mx-[7.5px]">
       <div>
-        <img src={imgProduct} alt="IMAGE PRODUCT" className="w-full" />
+        <img src={imgProduct} alt={name} className="w-full" />
       </div>
       <div>
         <div className="relative">
@@ -42,7 +42,7 @@ export const ProductDetailCard = ({
           {description}
         </p>
         <ProductOffer />
-        <CountDown amount={amount} stock={stock}></CountDown>
+        <CountDown amount={amount} stock={stock} />
         <ul className="flex *:font-bold *:text-base *:mr-5 my-7">
           <li>Size guide</li>
           <li>Delivery & Return</li>

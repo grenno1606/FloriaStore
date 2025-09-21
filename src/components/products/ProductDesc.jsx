@@ -10,7 +10,7 @@ export const ProductDesc = ({ img, title, description, reverse = false }) => {
       )}
     >
       <div className="w-full">
-        <img src={img} alt="image product" className="w-full" />
+        <img src={img} alt={title} className="w-full" />
       </div>
       <div className="py-[30px] md:px-[30px]">
         <p className="text-[40px] font-light uppercase">{title}</p>

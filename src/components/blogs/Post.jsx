@@ -4,7 +4,7 @@ export const Post = ({ img, day, month, year, title, commentCount }) => {
       <img
         className="w-[20%] min-h-[80px] object-cover cursor-pointer"
         src={img}
-        alt="img_post"
+        alt={title}
       />
       <div>
         <span className="text-[11px] text-gray-700 font-medium uppercase tracking-[0.1em] pb-1.5">

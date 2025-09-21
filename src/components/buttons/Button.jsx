@@ -23,6 +23,7 @@ const button = tv({
       third:
         "bg-white text-black hover:bg-pink-dark hover:text-white hover:fill-white",
       fourth: "border-black-light text-black-light",
+      fifth: "bg-gray-300 text-black",
     },
 
     size: {

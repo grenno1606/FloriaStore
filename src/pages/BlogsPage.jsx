@@ -2,7 +2,7 @@ import { Blog } from "../components/blogs/Blog";
 import { Post } from "../components/blogs/Post";
 import { Button } from "../components/buttons/Button";
 import { Breadcrumb } from "../components/common/Breadcrumb";
-import { ItemToggle } from "../components/common/ItemToggle";
+import { CategoryItem } from "../components/common/CategoryItem";
 import { TitleWidget } from "../components/common/TitleWidget";
 import { SendMailInput } from "../components/inputs/SendMailInput";
 import { IMG_BLOG } from "../contants/images";
@@ -112,19 +112,19 @@ export const BlogsPage = () => {
               <TitleWidget>CATEGORIES</TitleWidget>
               <ul className="mt-2">
                 <li>
-                  <ItemToggle>Accessories</ItemToggle>
+                  <CategoryItem>Accessories</CategoryItem>
                 </li>
                 <li>
-                  <ItemToggle>Accessories</ItemToggle>
+                  <CategoryItem>Accessories</CategoryItem>
                 </li>
                 <li>
-                  <ItemToggle>Accessories</ItemToggle>
+                  <CategoryItem>Accessories</CategoryItem>
                 </li>
                 <li>
-                  <ItemToggle>Accessories</ItemToggle>
+                  <CategoryItem>Accessories</CategoryItem>
                 </li>
                 <li>
-                  <ItemToggle>Accessories</ItemToggle>
+                  <CategoryItem>Accessories</CategoryItem>
                 </li>
               </ul>
             </div>
