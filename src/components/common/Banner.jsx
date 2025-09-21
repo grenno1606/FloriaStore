@@ -7,7 +7,7 @@ export const Banner = ({ img, subtitle, title, buttonName }) => {
       <img
         className="bg-cover w-full h-full transition-transform duration-1000 group-hover:scale-105"
         src={img}
-        alt="image banner"
+        alt={title}
       />
       <div className="absolute top-[30px] left-[30px] md:top-5 md:left-5">
         <p className="font-medium uppercase">{subtitle}</p>

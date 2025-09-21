@@ -42,7 +42,7 @@ export const Slideshow = ({
       <img
         className="object-cover object-center w-full h-full"
         src={image}
-        alt="image slide"
+        alt={titleSmall}
       />
       <div
         className={twMerge(

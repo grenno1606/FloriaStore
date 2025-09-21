@@ -32,8 +32,8 @@ export const Header = () => {
     <>
       <div
         className={twMerge(
-          "absolute top-0 left-0 right-0 z-40 bg-white xl:bg-transparent transition-all duration-300 shadow-md xl:shadow-none",
-          showHeader && "fixed xl:bg-white xl:shadow-md moveHeader"
+          "absolute top-0 left-0 right-0 z-40 bg-white xl:bg-transparent transition-all duration-300 shadow-none",
+          showHeader && "fixed xl:bg-white shadow-md moveHeader"
         )}
       >
         <div className="wrapper">

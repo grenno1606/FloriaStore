@@ -318,6 +318,7 @@ export const HomePage = () => {
               img={IMG_BLOG}
               day="23"
               month="AUG"
+              condensedContent={false}
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At
               sapiente hic labore sed ullam. Eos voluptatem repellat consectetur
@@ -330,6 +331,7 @@ export const HomePage = () => {
               img={IMG_BLOG}
               day="23"
               month="AUG"
+              condensedContent={false}
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At
               sapiente hic labore sed ullam. Eos voluptatem repellat consectetur

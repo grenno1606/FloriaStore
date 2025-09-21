@@ -13,7 +13,7 @@ export const ProductItem = ({
   return (
     <div className="overflow-hidden mb-8 w-full hover:shadow-medium group">
       <div className="relative">
-        <img className="w-full" src={img} alt="image product" />
+        <img className="w-full" src={img} alt={name} />
         <span className="absolute top-2.5 -right-14 py-1.5 px-16 rotate-45 text-xs font-bold tracking-wide bg-red-dark text-white">
           {salePercent}
         </span>
